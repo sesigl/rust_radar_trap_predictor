@@ -1,5 +1,6 @@
 use crate::domain::country::coordinate::coordinate::Coordinate;
 
+#[derive(Debug, Copy, Clone)]
 pub struct LocationBox {
     pub start: Coordinate,
     pub end: Coordinate,
