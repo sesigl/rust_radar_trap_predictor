@@ -58,9 +58,6 @@ mod tests {
 
         let distance_km = location_box.calculate_start_end_distance_km();
         assert_eq!(distance_km.round(), 504.0);
-
-        let distance_km = location_box.calculate_start_end_distance_km();
-        assert_eq!(distance_km.round(), 504.0);
     }
 
     #[test]
@@ -69,9 +66,6 @@ mod tests {
             start: Coordinate { latitude: 52.520008, longitude: 13.404954 },
             end: Coordinate { latitude: -23.944841, longitude: -46.330376 },
         };
-
-        let distance_km = location_box.calculate_start_end_distance_km();
-        assert_eq!(distance_km.round(), 10274.0);
 
         let distance_km = location_box.calculate_start_end_distance_km();
         assert_eq!(distance_km.round(), 10274.0);
